@@ -1,6 +1,6 @@
 *** Settings ***
 Library    SeleniumLibrary
-Suite Setup    Open Browser    https://the-internet.herokuapp.com/login    chrome    options=add_argument("--no-sandbox")    options=add_argument("--disable-dev-shm-usage")    options=add_argument("--user-data-dir=/tmp/unique-profile-${TEST NAME}")
+Suite Setup    Open Browser    https://the-internet.herokuapp.com/login    chrome    options=add_argument("--no-sandbox")    options=add_argument("--disable-dev-shm-usage")    options=add_argument("--user-data-dir=/tmp/unique-profile")
 Suite Teardown    Close Browser
 Test Teardown     Capture Page Screenshot
 
